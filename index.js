@@ -8,7 +8,7 @@ const io=new Server(server);
 app.use(express.static('./public'))
 
 const port=process.env.PORT || 5000
-const ip = "192.168.1.4";
+const ip = "YOUR_IP_ADDRESS";
 app.get('/', (req, res) => {
 
     res.sendFile(__dirname + '/public/index.html');
